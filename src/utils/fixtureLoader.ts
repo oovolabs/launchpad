@@ -1,4 +1,4 @@
-import BaseFixture from '@/fixtures/base';
+import BaseFixture from '../fixtures/base';
 import fs from 'fs';
 import path from 'path';
 

@@ -1,28 +1,37 @@
 {
   "name": "@oovo/launchpad",
   "version": "0.0.1",
-  "module": "src/index.ts",
-  "type": "module",
+  "type": "commonjs",
+  "main": "index.js",
   "bin": {
-    "project-init": "src/index.ts"
+    "launchpad": "./bin/launchpad"
   },
   "scripts": {
-    "publish:npm": "npm publish --access public"
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+
+    "publish:npm": "npm publish --access public",
+
+    "dev:link": "npm link",
+    "dev:makeexecWindows": "git update-index --chmod=+x ./bin/launchpad",
+    "dev:unlink": "npm unlink -g @oovo/launchpad"
   },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@types/gradient-string": "^1.1.6"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
     "@clack/core": "^0.3.4",
     "@clack/prompts": "^0.7.0",
     "axios": "^1.6.8",
-    "chalk": "5.2.0",
+    "chalk": "^4.1.2",
     "commander": "^12.0.0",
     "gradient-string": "^2.0.2",
     "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/gradient-string": "^1.1.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
   }
 }

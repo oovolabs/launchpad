@@ -1,8 +1,8 @@
 import { spinner, log, select, text } from '@clack/prompts';
-import { logger } from "@/utils/logger";
-import { renderTitle } from '@utils/renderTitle';
+import { logger } from "./utils/logger";
+import { renderTitle } from './utils/renderTitle';
 
-import fixtureUtils from '@utils/fixtureLoader';
+import fixtureUtils from './utils/fixtureLoader';
 
 const main = async () => {
     const s = spinner();
