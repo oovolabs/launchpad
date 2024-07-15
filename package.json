@@ -1,0 +1,28 @@
+{
+  "name": "@oovo/launchpad",
+  "version": "0.0.1",
+  "module": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "project-init": "src/index.ts"
+  },
+  "scripts": {
+    "publish:npm": "npm publish --access public"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/gradient-string": "^1.1.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@clack/core": "^0.3.4",
+    "@clack/prompts": "^0.7.0",
+    "axios": "^1.6.8",
+    "chalk": "5.2.0",
+    "commander": "^12.0.0",
+    "gradient-string": "^2.0.2",
+    "uuid": "^9.0.1"
+  }
+}
