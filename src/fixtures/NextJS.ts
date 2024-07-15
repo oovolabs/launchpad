@@ -1,6 +1,6 @@
 
 import { spawn } from "child_process";
-import { logger } from "@utils/logger";
+import { logger } from "../utils/logger";
 
 import BaseFixture from "./base";
 

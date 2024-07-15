@@ -1,5 +1,5 @@
 import gradientString from 'gradient-string';
-import { TITLE_TEXT } from '@consts/consts'
+import { TITLE_TEXT } from './consts'
 
 const Theme = gradientString([
     "#3139FB",
