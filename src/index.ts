@@ -1,6 +1,7 @@
 import { spinner, log, select, text } from '@clack/prompts';
 import { logger } from "./utils/logger";
 import { renderTitle } from './utils/renderTitle';
+import { NpxPath } from './utils/NpxPath';
 
 import fixtureUtils from './utils/fixtureLoader';
 
@@ -10,6 +11,7 @@ const main = async () => {
     // Startup Routine
     await s.start("Starting...");
     await new Promise((resolve) => setTimeout(resolve, 1 * 200));
+    await NpxPath.initialize();
     await s.stop();
 
     renderTitle();
@@ -45,6 +47,7 @@ const main = async () => {
 
     } catch (error) {
         logger.error(`Looks like something went wrong. Here's the error: \n${error}\n`)
+        console.error(error);
         logger.error(`Cleaning up..`);
 
         process.exit(1);

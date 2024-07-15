@@ -21,7 +21,7 @@ const fixtureUtils = {
         const files = fs.readdirSync(fixturesDir);
 
         const fixtureFiles = files.filter(file => (
-            file.endsWith('.ts')
+            file.endsWith('.ts') || file.endsWith('.js')
         ));
 
         const fixtures = fixtureFiles.map(file => {
