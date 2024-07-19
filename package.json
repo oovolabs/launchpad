@@ -18,6 +18,10 @@
     "dev:unlink": "npm unlink -g @oovo/launchpad"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oovolabs/launchpad.git"
+  },
   "author": "",
   "license": "ISC",
   "description": "",
