@@ -48,7 +48,6 @@ const main = async () => {
     } catch (error) {
         logger.error(`Looks like something went wrong. Here's the error: \n${error}\n`)
         console.error(error);
-        logger.error(`Cleaning up..`);
 
         process.exit(1);
     }

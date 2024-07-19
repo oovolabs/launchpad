@@ -1,10 +1,13 @@
+const { spawn } = require('node:child_process');
+
 import { NpxPath } from "../utils/NpxPath";
 import { logger } from "../utils/logger";
 import BaseFixture from "./base";
 
-const { spawn } = require('node:child_process');
-
-
+/**
+ * NextJS Fixture
+ * @extends BaseFixture
+ */
 class NextJS extends BaseFixture {
     public static NAME: string = "NextJS";
     private npxPath: string[];
@@ -19,11 +22,9 @@ class NextJS extends BaseFixture {
         }
     }
 
-
-
     public async run(eArgs: string[]): Promise<void> {
         const args = ['create-next-app', ...eArgs];
-        let npxPath = this.npxPath[0];
+        let npxPath = this.npxPath[0]; // @Todo: Either ask the user to choose or try all paths. donno yet
 
         logger.info(`Running command: ${npxPath} ${args.join(' ')}`);
 
