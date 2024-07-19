@@ -8,6 +8,6 @@ export const TITLE_TEXT = `   __                        _       ___          _
 \\____/\\__,_|\\__,_|_| |_|\\___|_| |_\\/    \\__,_|\\__,_|
 
 VERSION: ${version}
-FOUND NPX PATHS: ${NpxPath.getNpxPaths().join(', ')};
+FOUND NPX PATHS: \n -${NpxPath.getNpxPaths().join(' -\n') || 'None found'}
 
 `;
