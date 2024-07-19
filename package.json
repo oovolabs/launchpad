@@ -1,6 +1,7 @@
 {
   "name": "@oovo/launchpad",
-  "version": "0.0.11",
+  "description": "All-in-One Project Init Tool for Devs",
+  "version": "0.0.12",
   "type": "commonjs",
   "main": "index.js",
   "bin": {
@@ -17,14 +18,20 @@
     "dev:makeexecWindows": "git update-index --chmod=+x ./bin/launchpad",
     "dev:unlink": "npm unlink -g @oovo/launchpad"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "init",
+    "project",
+    "generator",
+    "typescript",
+    "nodejs"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oovolabs/launchpad.git"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "oOvo Labs",
+  "license": "MIT",
   "dependencies": {
     "@clack/core": "^0.3.4",
     "@clack/prompts": "^0.7.0",
@@ -35,5 +42,8 @@
     "@types/gradient-string": "^1.1.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
