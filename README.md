@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-  <img src="https://github.com/oovolabs/launchpad/blob/main/assets/logo.png?raw=true" width="250" alt="Logo for Launchpad">
+  <img src="https://github.com/oovolabs/launchpad/blob/main/assets/logo.png" width="250" alt="Logo for Launchpad">
 </picture>
 </p>
 

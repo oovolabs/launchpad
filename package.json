@@ -1,15 +1,18 @@
 {
   "name": "@oovo/launchpad",
-  "version": "0.0.6",
+  "version": "0.0.11",
   "type": "commonjs",
   "main": "index.js",
   "bin": {
     "launchpad": "./bin/launchpad"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "ts-node src/index.ts",
-    "publish:npm": "npm publish --access public",
+    "publish:npm": "npm run build && npm publish --access public",
     "dev:link": "npm link",
     "dev:makeexecWindows": "git update-index --chmod=+x ./bin/launchpad",
     "dev:unlink": "npm unlink -g @oovo/launchpad"
