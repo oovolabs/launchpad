@@ -1,20 +1,9 @@
-<p align="center">
+![launchpad-logo](https://github.com/oovolabs/launchpad/blob/main/assets/logo.png)
 
-  ![launchpad-logo](https://github.com/oovolabs/launchpad/blob/main/assets/logo.png)
-
-</p>
-
-<h1 align="center">
-  @oovo/launchpad
-</h1>
-
-<p align="center">
-  All-in-One Project Init Tool for Devs
-</p>
-
-<p align="center">
-    Easily Create a Software Project using <code>npx @oovo/launchpad</code>
-</p>
+# @oovo/launchpad
+All-in-One Project Init Tool for Devs
+  
+Easily Create a Software Project using `npx @oovo/launchpad`
 
 ## Supported Fixtures
 We currently support the following fixtures:
