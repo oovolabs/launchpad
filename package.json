@@ -1,6 +1,6 @@
 {
   "name": "@oovo/launchpad",
-  "version": "0.0.51",
+  "version": "0.0.6",
   "type": "commonjs",
   "main": "index.js",
   "bin": {
