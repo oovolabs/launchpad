@@ -1,7 +1,7 @@
 {
   "name": "@oovo/launchpad",
   "description": "All-in-One Project Init Tool for Devs",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "type": "commonjs",
   "main": "index.js",
   "bin": {
